@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  font-weight: 300;
+  background-color: #f6f6f6;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero-min.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.margin-b {
+  margin-bottom: 6.2rem !important;
+}
+.margin-right {
+  margin-right: 1.6rem;
+}
+.heading-primary {
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 300;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  margin-bottom: 4.8rem;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.4s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  border: 2px solid #e67e22;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #cf711f;
+}
+/*features*/
+
+.heading-secondary {
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+.heading-secondary::after {
+  content: "";
+  position: absolute;
+  transform: translate(-300%, 140%);
+  height: 2rem;
+  width: 10rem;
+  border-bottom: 2px solid #e67e22;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-gap {
+  gap: 6.2rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
